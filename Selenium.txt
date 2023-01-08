@@ -1,0 +1,192 @@
+
+WMMW+73C, SEZ Unit, Cessna Business Park, Kadubeesanahalli Village, Hobli, Sarjapur, Varthur Rd, Kaverappa Layout, Kadubeesanahalli, Marathahalli, Bengaluru, Karnataka 560103
+
+Must-Have:
+
+Jira, Selenium, Jenkins, GIT, Maven
+Good to Have:
+
+Automation Frameworks, Java, VBScript, Junit, Python3, AI knowledge
+
+
+Must-Have**
+
+Location : Pune/Bengaluru
+
+
+(Ideally should not be more than 4-7)
+
+Developer (4-7 Years Exp.) with strong technical skills in Big Data
+
+Overall experience of min. 4 years
+Should be good in STLC and Testing concepts, Methodology
+Should have hands on Test Automation experience in Selenium and Java. Min of 2 years.
+Strong communication skills, and ability to perform Multi Tasking.
+
+1.Java Download 1.8.0_131
+2.Chrome Driver should match with Chrome Browser
+3.Selenium Standalone Server 3.141.59
+bulid->Add External jar
+
+MAVEN:-
+https://mkyong.com/maven/how-to-install-maven-in-windows/
+
+-Create a maven project
+-simple project
+-workspace default location
+    i.group id-company name-com.arcplayname
+   ii.artifact id-product name-extentreportmaven 
+-finish
+
+ -dependancy
+-https://mvnrepository.com/artifact/com.aventstack/extentreports/4.0.9
+https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.141.59
+copy and paste into dependancies 
+copy and paste build before dependancies 
+E.g Pom.xml for maven build
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.arcplay</groupId>
+	<artifactId>ExtentReportViaMaven</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-compiler-plugin</artifactId>
+	<version>3.5</version>
+<configuration>
+<source>1.8</source>
+<target>1.8</target>
+</configuration>
+</plugin>
+ <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <archive>
+            
+            <manifest>
+              <mainClass>seleniumTest.OpenGoogle</mainClass>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib</classpathPrefix>
+            </manifest>
+   
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.8</version>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/lib</outputDirectory>
+              <includeScope>runtime</includeScope>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-site-plugin</artifactId>
+  <version>3.7.1</version>
+</plugin>
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-project-info-reports-plugin</artifactId>
+  <version>3.0.0</version>
+</plugin>
+      
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.0.9</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.7.2</version>
+</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-chrome-driver</artifactId>
+    <version>4.7.2</version>
+</dependency>
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>1.7.5</version>
+   </dependency>
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-simple</artifactId>
+       <version>1.6.4</version>
+   </dependency>
+
+	</dependencies>
+</project>
+
+build--> java -jar filename.jar
+
+CUCUMBER BDD:-
+install CUCUMBER BDD plugin in eclipse marketplace,
+include maven dependancies into pom,
+include bdd dependancy into pom
+add featureFiles
+create Runner package and add class as  RunnerClass.java
+
+Jenkins-
+
+https://www.simplilearn.com/tutorials/jenkins-tutorial/jenkins-installation-on-windows
+
+global install the JAVA_HOME and jdk file environment path
+
+setup the console output in build environment
+
+see build triggers
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+ 
+
+
