@@ -13,8 +13,9 @@ public class OpenGoogle {
 		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.google.co.in"); 
+		driver.quit();
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")).sendKeys("ggh");
-		
+		driver.quit();
 		
 
 	}
