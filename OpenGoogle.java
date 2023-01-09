@@ -6,7 +6,7 @@ public class OpenGoogle {
 		// TODO Auto-generated method stub
 		
 		int a=10;
-		System.out.println("a is");
+		System.out.println("a is b");
 		
 
 	}
