@@ -1,8 +1,4 @@
-package selenium;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class OpenGoogle {
 
@@ -10,11 +6,7 @@ public class OpenGoogle {
 		// TODO Auto-generated method stub
 		
 		int a=10;
-		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.google.co.in"); 
-		driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")).sendKeys("gh");
-		
+		System.out.println(a);
 		
 
 	}
