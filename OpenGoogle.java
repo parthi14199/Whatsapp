@@ -9,7 +9,7 @@ public class OpenGoogle {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		
+		int a=10;
 		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.google.co.in"); 
@@ -18,6 +18,6 @@ public class OpenGoogle {
 		
 
 	}
-	driver.quit();
+	
 
 }
